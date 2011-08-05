@@ -56,12 +56,12 @@ $umegNamespaceIndex = null;
  * your wiki. All data is treated anonymously and there will be no chance to trace
  * it back to your wiki. We collect this information to know where the help is used
  * and what users think about the help text. Also bugreports can be send to SMW+.
- * If you not wish, that your wiki sends back any information to the SMW+ forum
- * please set this variable to false. This also makes sence, if you running a
- * cooperate wiki which has no access to the Internet.
- * All data that is send this way, will not be publicated on the SMW+ forum but
+ * If you do not wish, that your wiki sends back any information to the SMW+ forum
+ * please set this variable to false. This also makes sense, if you are running a
+ * corpoerate wiki that has no access to the internet.
+ * All data that is send this way, will not be published on the SMW+ forum but
  * used internally by the SMW+ staff only.
- * The default value will be true, i.e. send user comments and bug reports to SMW+
+ * The default value is 'true', i.e. send user comments and bug reports to SMW+
  */
 $umegSendFeedbackToSMWplus = true;
 
@@ -319,7 +319,7 @@ function umefInitLanguage() {
 }
 
 /**
- * Check if ther are any help articles in the wiki
+ * Check if there are any help articles in the wiki
  *
  * @global string $umegNamespace
  * @return int number of articles
