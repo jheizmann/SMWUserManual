@@ -74,21 +74,21 @@ a new version of all help articles that are available.
 
     This will read the articles from the SMWForum and import them into your
     wiki.
-    This script will only update/delete any help articles. If will not remove
+    This script will only update/delete any help articles. It will not remove
     any other articles that belong to this extension. To remove these, please
     make use of the Deployment Framework or do a query that selects all pages
     that have the annotation [[Part of bundle::Smwusermanual]].
 
-    The setup script knows the following options:
+    The setup script has the following options:
         no option given: fetch all help articles from the SMW+ forum and install
-                  these in your wiki.
+                  them in your wiki.
         -d delete all help articles from your wiki
-        -e fetch articles from the SMW+ forum and write them to a local xml file
-        -i read a local xml file and import all help articles into your wiki
+        -e fetch articles from the SMW+ forum and write them to a local XML file
+        -i read a local XML file and import all help articles into your wiki
         -o overwrite must be set to overwrite existing help articles in your
-           wiki with a new version. Also use this to overwrite and existing
-           xml file when exporting the help articles
-        --file=<filename> this is needed by the -e and -i switch, when the xml
+           wiki with a new version. Also use this to overwrite an existing
+           XML file when exporting the help articles
+        --file=<filename> this is needed by the -e and -i switches, when the XML
            file is used to export or import help articles.
 
 If you do not have the Parser Functions extension installed, modify the page
@@ -101,7 +101,7 @@ Configuration for the extension:
 ================================
 
 The functionality of the SMWUserManual extension can be affected by
-several options that can be set as variables. These must be put in the
+several options that can be set as variables. They must be put in the
 LocalSettings.php after the require_once statement and before the
 enableSMWUserManual() function call.
 
@@ -109,4 +109,4 @@ A detailed description of all variables and their meaning can be found
 in the file SMW_UserManual.php in the includes directory.
 
 Note: please look at the SMW_UserManual.php and setup your SMW+ account
-if you want to submit rating and bug reports for your site.
+if you want to submit ratings and bug reports for your site.
